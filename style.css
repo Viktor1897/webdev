@@ -2,6 +2,28 @@
 {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+p {
+  color: #4E4E4E;
+}
+
+.btn_main {
+  background-color: #00AFDB;
+  border: none;
+  padding: 14.5px 47px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 body {
@@ -9,8 +31,210 @@ body {
   margin: 0 auto;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  width: 1600px;
+  height: 95px;
+  position: absolute;
+}
+
+.navigation_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 595px;
+  height: 100%;
+  list-style-type: none;
+}
+
+.navigation_list li a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.selected {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+/*Корректировка пунктов меню под Pixel Perfect*/
+/**********************************************/
+.navigation_list li:first-child {           
+  position: relative;
+  top: +1px;
+} 
+
+.navigation_list li:nth-child(2) {
+  position: relative;
+  left: -10px;
+}
+
+.navigation_list li:nth-child(3) {
+  position: relative;
+  left: -6px;
+  top: +2px;
+}
+
+.navigation_list li:nth-child(5) {
+  position: relative;
+  left: -14px;
+  top: +1px;
+}                                           /**/
+/**********************************************/
+
 .your_life {
   width: 100%;
   height: 744px;
+  color: #FFFFFF;
   background: url(assets/bg-image-wrapper.png) no-repeat;
+}
+
+.center {
+  width: 760px;
+  height: 413px;
+  padding: 229px 0 0 421px;
+}
+
+.your_life h2 {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  color: #FFFFFF;
+  margin-left: 15px;
+}
+
+.your_life p {
+  width: 448px;
+  margin: 21px auto 30px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25.2px;
+  color: #FFFFFF;
+}
+
+.center .btn_main {
+  margin-left: 286px;
+}
+
+.socials ul {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  height: 20px;
+  margin: 183px auto 0 auto;
+  list-style-type: none;
+}
+
+/*-----------SECTION RAPPRESENT-----------*/
+.rappresent {
+  width: 100%;
+  height: 842px;
+  background-color: #FFFFFF;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 1062px;
+  height: 582px;
+  padding: 120px 270px 0 268px;
+}
+
+.left_side {
+  width: 407px;
+  height: 233px;
+  padding-top: 174px;
+}
+
+.left_side h2 {
+  letter-spacing: 1px;
+}
+
+.left_side p {
+  margin-top: 20px;
+  line-height: 20px;
+  margin-bottom: 29px;
+}
+
+/*-----------SECTION OUR COMMUNITY-----------*/
+.our_community {
+  width: 100%;
+  height: 504px;
+  background-color: #F5F6F7;
+}
+
+.controls {
+  position: absolute;
+  top: 200px;
+  right: 430px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.column-2-layout {
+  display: flex;
+  width: 1330px;
+  height: 244px;
+  margin: 120px 0 0 270px;
+}
+
+.first_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 298px;
+  height: 200px;
+  margin: 35px 138px 0 0;
+}
+
+.first_column img {
+  margin-bottom: 20px;
+}
+
+.first_column h3 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  margin-bottom: 14px;
+}
+
+.first_column p {
+  text-align: center;
+  width: 298px;
+  height: 80px;
+  line-height: 19.6px;
+}
+
+
+.column-3-layout {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.column-3-layout img {
+  margin-right: 30px;
+}
+
+.implement {
+  width: 100%;
+  height: 842px;
+  background-color: #FFFFFF;
+}
+
+.subscribe {
+  width: 100%;
+  height: 598px;
+  background-image: url(assets/image-bg.png);
+}
+
+.download {
+  width: 100px;
+  height: 468px;
+}
+
+footer {
+  background-color: #000000;;
 }

@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>webdev</title>
 </head>
 <body>
-    <section class="your_life">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#"><img class="logo" src="assets/logo.png" alt="W"></a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h1>YOUR LIFE IS WEBDEV</h1>
-        <p>Whatever the approach to development may be, the final program must satisfy some fundamental properties</p>
-        <button class="btn_main">Get stardet</button>
-        <div class="socials">
-            <ul>
-                <li><a href="#"><img src="assets/mail_fff.png" alt="Email"></a></li>
-                <li><a href="#"></a><img src="assets/facebook_fff.png" alt="Facebook"></li>
-                <li><a href="#"><img src="assets/insta_fff.png" alt="insta"></a></li>
-                <li><a href="#"></a><img src="assets/telegram_fff.png" alt="telegram"></li>
+    <header>
+        <nav>
+            <ul class="navigation_list">
+                <li><a class ="selected" href="#">About</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#"><img class="logo" src="assets/logo.png" alt="W"></a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">FAQ</a></li>
             </ul>
-        </div>
-    </section>
+        </nav>
+    </header>
     <main>
+        <section class="your_life">
+            <div class="center">
+                <h2>Your life is webdev</h2>
+                <p>Whatever the approach to development may be, the final program must satisfy some fundamental properties</p>
+                <button class="btn_main">Get started</button>
+                <div class="socials">
+                    <ul>
+                        <li><a href="#"><img src="assets/mail_fff.png" alt="Email"></a></li>
+                        <li><a href="#"><img src="assets/facebook_fff.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="assets/insta_fff.png" alt="insta"></a></li>
+                        <li><a href="#"><img src="assets/telegram_fff.png" alt="telegram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section class="rappresent">
             <div class="wrap">
                 <div class="left_side">
-                    <h2>Rappresent your idea with a smart Design</h2>
+                    <h2>Rappresent your idea with <br>a smart Design</h2>
                     <p>Tasks accompanying and related to programming include: testing, debugging, source code 
                         maintenance, <strong>implementation of build systems</strong>, and management of derived artifacts, such
                          as the machine code of computer programs. </p>
@@ -47,20 +50,20 @@
             </div>
         </section>
         <section class="our_community">
-            <p>
+            <p class="controls">
                 <span class="left_arrow"><</span>
                 <span class="selected_pic">1</span>
                 <span class="slash">/</span>
                 <span class="all_pics">5</span>
                 <span class="right_arrow">></span>
             </p>
-            <div class="2-column-layout">
+            <div class="column-2-layout">
                 <div class="first_column">
-                    <img src="assets/woman_icon.png" alt="woman">
+                    <img src="assets/woman_icon.png" width="45px" height="45px" alt="woman">
                     <h3>Our community</h3>
                     <p>A hacker is any skilled computer expert that uses their technical knowledge to overcome a problem, but it can also mean a security hacker in common language</p>
                 </div>
-                <div class="3-column-layout">
+                <div class="column-3-layout">
                     <img src="assets/pic_1.png" alt="computers">
                     <img src="assets/pic_2.png" alt="laptop">
                     <img src="assets/pic_3.png" alt="woman with computers">
