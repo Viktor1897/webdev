@@ -11,6 +11,7 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   color: #373737;
+  letter-spacing: 1px;
 }
 
 p {
@@ -32,8 +33,7 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: center;
+  margin: 25px 0 0 503px;
   width: 1600px;
   height: 95px;
   position: absolute;
@@ -43,9 +43,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 595px;
+  width: 582px;
   height: 100%;
   list-style-type: none;
+}
+
+.navigation_list li:nth-child(2) {
+  position: relative;
+  right: 8px;
+  bottom: 1px;
+}
+
+.navigation_list li:nth-child(4) {
+  position: relative;
+  left: +8px;
+  bottom: +1px;
 }
 
 .navigation_list li a{
@@ -57,31 +69,6 @@ header {
   border-bottom: 1px solid #FFFFFF;
 }
 
-/*Корректировка пунктов меню под Pixel Perfect*/
-/**********************************************/
-.navigation_list li:first-child {           
-  position: relative;
-  top: +1px;
-} 
-
-.navigation_list li:nth-child(2) {
-  position: relative;
-  left: -10px;
-}
-
-.navigation_list li:nth-child(3) {
-  position: relative;
-  left: -6px;
-  top: +2px;
-}
-
-.navigation_list li:nth-child(5) {
-  position: relative;
-  left: -14px;
-  top: +1px;
-}                                           /**/
-/**********************************************/
-
 .your_life {
   width: 100%;
   height: 744px;
@@ -89,13 +76,13 @@ header {
   background: url(assets/bg-image-wrapper.png) no-repeat;
 }
 
-.center {
+.your_life_content {
   width: 760px;
   height: 413px;
   padding: 229px 0 0 421px;
 }
 
-.your_life h2 {
+.your_life_content h2 {
   font-size: 64px;
   font-weight: bold;
   text-transform: uppercase;
@@ -104,7 +91,7 @@ header {
   margin-left: 15px;
 }
 
-.your_life p {
+.your_life_content p {
   width: 448px;
   margin: 21px auto 30px auto;
   text-align: center;
@@ -113,7 +100,7 @@ header {
   color: #FFFFFF;
 }
 
-.center .btn_main {
+.your_life_content .btn_main {
   margin-left: 286px;
 }
 
@@ -133,7 +120,7 @@ header {
   background-color: #FFFFFF;
 }
 
-.wrap {
+.rappresent_content {
   display: flex;
   justify-content: space-between;
   width: 1062px;
@@ -141,17 +128,13 @@ header {
   padding: 120px 270px 0 268px;
 }
 
-.left_side {
+.rappresent_content_left_side {
   width: 407px;
   height: 233px;
   padding-top: 174px;
 }
 
-.left_side h2 {
-  letter-spacing: 1px;
-}
-
-.left_side p {
+.rappresent_content_left_side p {
   margin-top: 20px;
   line-height: 20px;
   margin-bottom: 29px;
@@ -159,16 +142,42 @@ header {
 
 /*-----------SECTION OUR COMMUNITY-----------*/
 .our_community {
-  width: 100%;
+  width: 1600px;
   height: 504px;
   background-color: #F5F6F7;
+  position: relative;
+ 
 }
 
 .controls {
+  width: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   position: absolute;
-  top: 200px;
-  right: 430px;
-  font-weight: 500;
+  top: 79px;
+  right: 269px;
+  font-weight: 400;
+  
+}
+
+.left_arrow {
+  width: 9px;
+  height: 14px;
+  background-image: url(assets/left_arrow.png);
+  position: relative;
+  left: -7px;
+}
+
+.right_arrow {
+  width: 9px;
+  height: 14px;
+  background-image: url(assets/right_arrow.png);
+  position: relative;
+  right: -8px;
+}
+
+.controls div {
   font-size: 18px;
 }
 
@@ -176,7 +185,7 @@ header {
   display: flex;
   width: 1330px;
   height: 244px;
-  margin: 120px 0 0 270px;
+  padding: 120px 0 0 270px;
 }
 
 .first_column {
@@ -197,14 +206,14 @@ header {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2.4px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .first_column p {
   text-align: center;
   width: 298px;
   height: 80px;
-  line-height: 19.6px;
+  line-height: 20px;
 }
 
 
@@ -218,23 +227,95 @@ header {
   margin-right: 30px;
 }
 
+/*-----------SECTION IMPLEMENT-----------*/
+
 .implement {
-  width: 100%;
+  width: 1600px;
   height: 842px;
   background-color: #FFFFFF;
 }
 
+.implement_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 953px;
+  height: 582px;
+  padding: 119px 0 0 269px;
+}
+
+.implement_content_left_side {
+margin-top: 5px;
+}
+
+.implement_content_right_side {
+  width: 407px;
+  height: 184px;
+}
+
+.implement_content_right_side p {
+  line-height: 20px;
+  margin: 21px 0 29px 0;
+}
+
+/*-----------SECTION SUBSCRIBE-----------*/
 .subscribe {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 1600px;
   height: 598px;
   background-image: url(assets/image-bg.png);
 }
 
+.subscribe_content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 216px;
+  width: 406px;
+  height: 110px;
+}
+
+.subscribe_content h2 {
+  color: #FFFFFF;
+  margin-left: 14px;
+}
+
+.subscribe_content input {
+  padding: 16px 151px 13px 25px;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+}
+
+.subscribe_content button {
+  padding: 15px 23px 13px 25px;
+  background-color: #00AFDB;
+  border: none;
+}
+
+/*-----------SECTION DOWNLOAD-----------*/
 .download {
-  width: 100px;
+  background-color: #F5F6F7;
+  display: flex;
+  justify-content: center;
+  width: 1600px;
   height: 468px;
 }
 
+.download_content {
+  width: 480px;
+  height: 167px;
+  margin-top: 119px;
+  text-align: center;
+}
+
+.download_content p {
+  margin: 22px 0 30px 0;
+  line-height: 20px;
+}
+
 footer {
-  background-color: #000000;;
+  width: 1600px;
+  height: 185px;
+  background-color: #000000;
 }

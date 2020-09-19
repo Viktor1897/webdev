@@ -21,7 +21,7 @@
     </header>
     <main>
         <section class="your_life">
-            <div class="center">
+            <div class="your_life_content">
                 <h2>Your life is webdev</h2>
                 <p>Whatever the approach to development may be, the final program must satisfy some fundamental properties</p>
                 <button class="btn_main">Get started</button>
@@ -36,27 +36,27 @@
             </div>
         </section>
         <section class="rappresent">
-            <div class="wrap">
-                <div class="left_side">
+            <div class="rappresent_content">
+                <div class="rappresent_content_left_side">
                     <h2>Rappresent your idea with <br>a smart Design</h2>
                     <p>Tasks accompanying and related to programming include: testing, debugging, source code 
                         maintenance, <strong>implementation of build systems</strong>, and management of derived artifacts, such
                          as the machine code of computer programs. </p>
                     <button class="btn_main">Get started</button>
                 </div>
-                <div class="right_side">
+                <div class="rappresent_content_right_side">
                     <img src="assets/content-image-1.png" alt="people with cards">
                 </div>
             </div>
         </section>
         <section class="our_community">
-            <p class="controls">
-                <span class="left_arrow"><</span>
-                <span class="selected_pic">1</span>
-                <span class="slash">/</span>
-                <span class="all_pics">5</span>
-                <span class="right_arrow">></span>
-            </p>
+            <div class="controls">
+                <div class="left_arrow"></div>
+                <div class="selected_pic">1</div>
+                <div class="slash">/</div>
+                <div class="all_pics">5</div>
+                <div class="right_arrow"></div>
+            </div>
             <div class="column-2-layout">
                 <div class="first_column">
                     <img src="assets/woman_icon.png" width="45px" height="45px" alt="woman">
@@ -71,28 +71,32 @@
             </div>
         </section>
         <section class="implement">
-            <div class="left_column">
-                <img src="assets/content-image-2.png" alt="macbook">
-            </div>
-            <div class="right_column">
-                <h2>Implement right code</h2>
-                <p>These might be considered part of the <strong>programming process</strong>, but often the term software development is used
-                     for this larger process with the term programming, implementation</p>
-                <button class="btn_main">Learn more</button>
+            <div class="implement_content">
+                <div class="implement_content_left_side">
+                    <img src="assets/content-image-2.png" alt="macbook">
+                </div>
+                <div class="implement_content_right_side">
+                    <h2>Implement right code</h2>
+                    <p>These might be considered part of the <strong>programming process</strong>, but often the term software development is used
+                        for this larger process with the term programming, implementation</p>
+                    <button class="btn_main">Learn more</button>
+                </div>
             </div>
         </section>
         <section class="subscribe">
+            <div class="subscribe_content">
                 <h2>Sign up for our newsletter</h2>
                 <form action="">
-                    <input type="email" value="E-mail">
-                    <button type="submit">&#10004;</button>
+                    <input type="email" value="E-mail"><button type="submit"><img src="assets/btn-check.png" alt="check"></button>
                 </form>
+            </div>
         </section>
         <section class="download">
-            <h2>Download the app</h2>
-            <p>Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.</p>
-            <button>Apple store</button>
-            <button>Play market</button>
+            <div class="download_content">
+                <h2>Download the app</h2>
+                <p>Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.</p>
+                <button class="btn_main">Apple store</button><button class="btn_main">Play market</button>
+            </div>
         </section>
     </main>
     <footer>
