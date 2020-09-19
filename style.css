@@ -21,7 +21,7 @@ p {
 .btn_main {
   background-color: #00AFDB;
   border: none;
-  padding: 14.5px 47px;
+  padding: 15px 48px 14px 47px;
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: bold;
@@ -33,7 +33,6 @@ body {
 }
 
 header {
-  margin: 25px 0 0 503px;
   width: 1600px;
   height: 95px;
   position: absolute;
@@ -46,6 +45,7 @@ header {
   width: 582px;
   height: 100%;
   list-style-type: none;
+  padding: 26px 0 0 503px;
 }
 
 .navigation_list li:nth-child(2) {
@@ -67,6 +67,7 @@ header {
 
 .selected {
   border-bottom: 1px solid #FFFFFF;
+  font-weight: 500;
 }
 
 .your_life {
@@ -79,7 +80,7 @@ header {
 .your_life_content {
   width: 760px;
   height: 413px;
-  padding: 229px 0 0 421px;
+  padding: 230px 0 0 421px;
 }
 
 .your_life_content h2 {
@@ -93,7 +94,7 @@ header {
 
 .your_life_content p {
   width: 448px;
-  margin: 21px auto 30px auto;
+  margin: 21px auto 29px auto;
   text-align: center;
   font-size: 18px;
   line-height: 25.2px;
