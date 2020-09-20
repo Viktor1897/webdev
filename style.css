@@ -21,7 +21,8 @@ p {
 .btn_main {
   background-color: #00AFDB;
   border: none;
-  padding: 15px 48px 14px 47px;
+  width: 184px;
+  height: 46px;
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: bold;
@@ -45,7 +46,7 @@ header {
   width: 582px;
   height: 100%;
   list-style-type: none;
-  padding: 26px 0 0 503px;
+  padding: 25px 0 0 503px;
 }
 
 .navigation_list li:nth-child(2) {
@@ -56,8 +57,8 @@ header {
 
 .navigation_list li:nth-child(4) {
   position: relative;
-  left: +8px;
-  bottom: +1px;
+  left: 8px;
+  bottom: 1px;
 }
 
 .navigation_list li a{
@@ -80,7 +81,7 @@ header {
 .your_life_content {
   width: 760px;
   height: 413px;
-  padding: 230px 0 0 421px;
+  padding: 229px 0 0 421px;
 }
 
 .your_life_content h2 {
@@ -138,7 +139,7 @@ header {
 .rappresent_content_left_side p {
   margin-top: 20px;
   line-height: 20px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 /*-----------SECTION OUR COMMUNITY-----------*/
@@ -259,6 +260,10 @@ margin-top: 5px;
   margin: 21px 0 29px 0;
 }
 
+.implement .btn_main {
+  width: 180px;
+}
+
 /*-----------SECTION SUBSCRIBE-----------*/
 .subscribe {
   display: flex;
@@ -282,16 +287,25 @@ margin-top: 5px;
 }
 
 .subscribe_content input {
-  padding: 16px 151px 13px 25px;
+  width: 316px;
+  height: 46px;
+  padding-left: 24px;
   margin-top: 30px;
   border: none;
   outline: none;
 }
 
 .subscribe_content button {
-  padding: 15px 23px 13px 25px;
+  width: 66px;
+  height: 46px;
   background-color: #00AFDB;
   border: none;
+}
+
+.subscribe_content button img {
+  position: relative;
+  top: 2px;
+  left: 1px;
 }
 
 /*-----------SECTION DOWNLOAD-----------*/
@@ -311,8 +325,41 @@ margin-top: 5px;
 }
 
 .download_content p {
-  margin: 22px 0 30px 0;
+  margin: 22px 0 28px 0;
   line-height: 20px;
+}
+
+.download_btns {
+  width: 406px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 37px;
+}
+
+.btn_download {
+  width: 188px;
+  height: 50px;
+  position: relative;
+  padding-top: 2px;
+  padding-left: 17px;
+  text-align: left;
+  background-image: linear-gradient(to right, #00AFDB 68%, #009CC2 68%);
+}
+
+.btn_download:first-of-type {
+  padding-left: 19px;
+}
+
+.btn_download img {
+  position: absolute;
+  right: 21px;
+  top: 15px;
+}
+
+.btn_download:last-of-type img {
+  right: 20px;
+  top: 13px;
 }
 
 footer {
@@ -332,7 +379,6 @@ footer {
   align-items: center;
 }
 
-
 .footer_content ul {
   display: flex;
   justify-content: space-between;
@@ -340,6 +386,12 @@ footer {
   height: 20px;
   list-style-type: none;
   margin-top: 4px;
+}
+
+.footer_content ul li + li:before {
+  content: "ǀ";
+  color: #FFFFFF;
+  padding-right: 19px;
 }
 
 .footer_content ul a {
